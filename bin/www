@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+var debug = require('debug')('pushapp-server');
+var app = require('../app');
+require("dotenv").config({path: "../.env"});
+
+app.set('port', process.env.PORT);
+
+var server = app.listen(app.get('port'), function () {
+    debug('Express server listening on port ' + server.address().port);
+});
+
+// Socket.io server
+const io = require('socket.io')(server);
+io.on('connection', function (socket) {
+    console.log('Client connected');
+    socket.emit('message', {user: "Server", text: "Welcome to PushApp!"});
+
+    socket.on('disconnect', function () {
+        console.log('Client disconnected');
+    });
+
+    socket.on('notification', function (msg) {
+        console.log('notification for ' +  msg.for, msg);
+        io.emit('notification for ' + msg.for, msg);
+    });
+});
