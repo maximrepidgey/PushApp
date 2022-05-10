@@ -1,0 +1,16 @@
+<div class="col s12 m4">
+    <div class="card">
+        <div class="card-image">
+            <img src="{client.photo}">
+
+        </div>
+        <div class="card-content">
+            <span name="{client._id}"class="card-title">{client.firstName} {client.lastName} </span>
+            <p>{client.description}</p>
+            <p>{client.sex}</p>
+            <p>{birthday.birthday}</p>
+            <p>{client.email}</p>
+            <p>{client.phone}</p>
+        </div>
+    </div>
+</div>

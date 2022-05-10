@@ -1,0 +1,124 @@
+
+.hero-header-banner-section {
+	position: relative;
+  display: block;
+  background: url("../img/header-img.png");
+  background-size: cover;
+  background-position: left;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+	height: 80vh;
+}
+
+
+.hero-header-banner-section--2 {
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  background-image: url("../img/trainers/trainer-hero.jpeg");
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 40vh;
+  margin-bottom: 5rem;
+}
+
+.header-text--h1{
+  position: absolute;
+  bottom: 70%;
+  right: 5%;
+  background: linear-gradient(to right, #16bffd, #cb3066); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.learn-more-btn{
+  position: absolute;
+  bottom: 45%;
+  right: 10%;
+  padding: 1.3rem 4rem;
+  border-radius: 5px;
+  background: linear-gradient(to right, #16bffd, #cb3066);
+}
+
+.learn-more-btn a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color:white;
+}
+
+.learn-more-text{
+  position: absolute;
+  text-transform: capitalize;
+  bottom: 60%;
+  right: 5%;
+  text-align: right;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color:white;
+}
+
+@media only screen and (max-width: 875px) {
+
+.hero-header-banner-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, #16bffd48, #cb30665e),url("../img/mobile-header.jpg");
+    background-size: cover;
+    background-position: left;
+    margin: 0;
+    padding-bottom: 5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
+    width: 100vw;
+    height: 50vh;
+}
+
+
+.header-text--h1{
+    text-align: center;
+    position: unset;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 3rem 0 ;
+}
+
+.learn-more-btn{
+    margin: 0 auto;
+    position: unset;
+    text-align: center;
+    width: 12rem;
+    padding: 1rem 1.3rem;
+    border-radius: 40px;
+    background: linear-gradient(to right, #16bffd, #cb3066);
+}
+
+.learn-more-btn a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color:white;
+}
+
+.learn-more-text{
+  position: unset;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color:white;
+  margin-bottom: 3rem;
+}
+}

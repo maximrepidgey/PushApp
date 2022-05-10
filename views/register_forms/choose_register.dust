@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="">
+
+    <!-- Fullcalendar-->
+    <!-- Materialize-->
+    <link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/admin-materialize.min.css?0" rel="stylesheet">
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{css}">
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="reg">
+            <div class="col l6 s12">
+                <img src="/img/icons/coach-icon.png" alt="">
+                <input type="submit" onclick="fetchCoach(event)" value="Coach" name="coach">                
+            </div>
+            <div class="col l6 s12">
+                <img src="/img/icons/client-icon.png" alt="">
+                <input type="submit" onclick="fetchClient(event)" value="Client" name="client">
+            </div>
+        </div>
+    </div>
+
+<script src="/js/helper.js"></script>
+<script src="js/resources/dustjs-linkedin/dust-core.min.js"></script>
+<script src="/js/views.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<div class="row exercise-div center">
+    <h1 class="col l12 s12 "><span class="exercise-name col s12">{exercise.name}</span>
+        <div class="col s12 set-div"><span class="exercise-set">{exercise.set}</span><span class="set-text"> Sets</span>
+        </div>
+    </h1>
+    <h1 class="col l6 s12">{exercise.repetitions} repetitions</h1>
+    <h1 class="col l6 s12">{exercise.pumpWeight} {exercise.weightUnit}</h1>
+    <blockquote class="col l12 s12">
+        {exercise.description}
+    </blockquote>
+    {^finish}
+    <a onclick="showFeedbackForm()"
+        class="col l6 s12 btn btn-large waves-effect waves-light black offset-l3">Continue</a>
+    {:else}
+    <a onclick="showFeedbackForm()"
+        class="col l6 s12 btn btn-large waves-effect waves-light black offset-l3">Finish</a>
+    {/finish}
+</div>

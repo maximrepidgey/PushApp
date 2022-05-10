@@ -1,0 +1,137 @@
+<div class="row">
+<div class="input-field col s12">
+    <label>First name:
+        <input required pattern="[a-zA-Z][a-z]+$" type="text" value="{firstName}" name="firstName"/>
+    </label>
+</div>
+</div>
+
+<div class="row">
+<div class="input-field col s12">
+    <label>Last name:
+        <input required pattern="[a-zA-Z][a-z]+$" type="text" value="{lastName}" name="lastName"/>
+    </label>
+</div>
+</div>
+
+<div class="row">
+<div class="input-field col s12">
+    <label>Description:
+        {?description}<input type="text" value="{description}" name="description"/>
+        {:else}<input type="text" name="description" data-length="120"/>{/description}
+    </label>
+</div>
+</div>
+
+<div class="row">
+<div class="file-field input-field">
+<label>Upload a file:
+<div class="btn">
+    <span>FILE</span>
+        <input onchange="getImage()" id="image" accept="image/*" type="file"/>
+    </div>
+
+</label>
+        <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+         </div>
+</div>
+    {?photo}
+        <div class="cut-image">
+            <img src="{photo}" class="profile-{form}-image" id="im" alt="profile image">
+        </div>
+    {/photo}
+    <input style="color: black" onclick="deleteButton()" type="button" value="Remove image">
+    <input value="{photo}" id="putimage" type="hidden" name="photo">
+    <input value="{form}" id="form" type="hidden" name="form">
+</div>
+
+<div class="row">
+<div class="input-field col s12">
+    <label>Sex:<br>
+        <select name="sex" required>
+            <option {@eq key=sex value="male"}selected{/eq} value="male">male</option>
+            <option {@eq key=sex value="female"}selected{/eq} value="female">female</option>
+            <option {@eq key=sex value="other"}selected{/eq} value="other">other</option>
+        </select>
+    </label>
+</div>
+</div>
+
+<div class="row">
+<div class="input-field col s12">
+<label>Unit System
+        <select name="unitSystem" >
+            <option value="" disabled selected>Choose your option</option>
+            <option {@eq key=unitSystem value="metric"}selected{/eq} value="metric">metric</option>
+            <option {@eq key=unitSystem value="imperial"}selected{/eq} value="imperial">imperial</option>
+            <option {@eq key=unitSystem value="other"}selected{/eq} value="other">other</option>
+        </select>
+    </label>
+</div>
+</div>
+
+<div class="row">
+    <div class="input-field col s12">
+        <label>Phone:
+            <input required value="{phone}" type="text" name="phone"/>
+        </label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="input-field col s12">
+        <label>address1:
+            <input required value="{address1}" type="text" name="address1"/>
+        </label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="input-field col s12">
+        <label>address2:
+            <input type="text" value="{address2}" name="address2"/>
+        </label>
+    </div>
+</div>
+
+<div class="row">
+<div class="input-field col s12">
+    <label>city:
+        <input required value="{city}" type="text" name="city"/>
+    </label>
+</div>
+</div>
+
+<div class="row">
+    <div class="input-field col s12">
+        <label>state:
+            <input required value="{state}"type="text" name="state"/>
+        </label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="input-field col s12">
+        <label>zip Code:
+            <input required value="{zipCode}" type="text" name="zipCode"/>
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="input-field col s12">
+        <label>Country:
+            <input required value="{country}" type="text" name="country"/>
+        </label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="input-field col s12">
+        <label>Email:
+            <input required value="{email}" type="email" name="email"/>
+        </label>
+    </div>
+</div>
+
+<input type="hidden" value="{credentials}" name="credentials">

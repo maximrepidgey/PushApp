@@ -1,0 +1,16 @@
+.choose-body{
+    background-image: url('../img/settings-background.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register-heading{
+    text-transform: uppercase;
+    padding:1rem; 
+    background-color: black;
+    text-align: center;
+    margin: 3rem 30%;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{>"dashboard_partials/head" css="/css/coach.css"/}
+
+
+<body class="has-fixed-sidenav" data-gr-c-s-loaded="true">
+  {>"dashboard_partials/header" name="Coach Ramon" profile-picture="/img/icons/user-pic.png"/}
+  <main>
+    <div class="container">
+      {!<div class="masonry row" style="position: relative; height: 2134.14px;">
+        <div class="col s12" style="position: absolute; left: 0px; top: 0px;">
+          <h2 class="center">All Clients</h2>
+        </div>!}
+      <h2 class="center">All Clients</h2>
+      <p> wofofdfdsok </p>
+    {! !}
+      </div>
+
+    </div>
+    </div>
+  </main>
+  {>"dashboard_partials/footer"/}
+
+</body>
+
+</html>

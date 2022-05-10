@@ -1,0 +1,22 @@
+<div class="row" id="divtitle">
+        <div class="col s12 m4">
+            <a class="btn-large black" style="margin-top: 50%; transform:translateY(-50%);" onclick="windowToNewService()">New Service</a>
+        </div> 
+    {#services}
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-content">
+                <h5 class="card-title">{name}</h5>
+                <p><strong>Duration:</strong> {duration} month(s)</p>
+                <p><strong>Fee:</strong> {fee}</p><hr>
+                <p>{description}</p>
+                <input type="hidden" name="_id" value="{_id}">
+            </div>
+            <div class="card-action" style="background-color:black">
+                 <a class="white-text" onclick="windowToEditService(event)" style="cursor: pointer;">Edit</a>
+                 <a class="red-text" onclick="deleteService(event)" style="cursor: pointer;">Delete</a>
+            </div>
+        </div>
+    </div>
+    {/services}
+</div>

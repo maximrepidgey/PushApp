@@ -1,0 +1,9 @@
+<h2 class="center white-text" style="text-transform: uppercase;border-bottom: 3px solid; border-color:white; padding-bottom:0.5rem">Register new Coach</h2>
+<form method="post" action="/coaches/new" enctype="application/x-www-form-urlencoded">
+    {>"../partials/register"/}
+
+    <div class="row center">
+        <input class="btn btn-large black white-text center" type="submit" value="Register" />
+    </div>
+</form>
+

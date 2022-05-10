@@ -1,0 +1,51 @@
+.profile-square-image {
+    display: inline;
+    margin: 0 auto;
+    margin-left: 0;
+    height: 100%;
+    width: auto;
+}
+
+.profile-rec-image {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -25%;
+    height: 100%;
+    width: auto;
+}
+
+.profile-port-image {
+    display: inline;
+    width: 100%;
+}
+
+
+.cut-image {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-cut-image {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.big-cut-image {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.show-image {
+    display: inline-flex;
+    padding-top: 10px;
+    padding-left: 5px;
+}

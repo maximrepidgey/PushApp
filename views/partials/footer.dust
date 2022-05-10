@@ -1,0 +1,31 @@
+<footer class="footer">
+    <nav class="footer-nav">
+        <div class="row">
+            <div class="col-lg-4 col-xs-6">
+                <ul class="footer-menu">
+                    <li><a class="footer-list-element" href="#">Home</a></li>
+                    <li><a class="footer-list-element" href="#">Our Coaches</a></li>
+                    <li><a class="footer-list-element" href="#about">About us</a></li>
+                    <li><a class="footer-list-element" href="#">Sign up</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-xs-6">
+                <ul class="legal-disclaimer">
+                    <li><a class="footer-list-element" href="#">Cookies Policy</a></li>
+                    <li><a class="footer-list-element" href="#">Privacy Policy</a></li>
+                    <li><a class="footer-list-element" href="#">Moneyback Policy</a></li>
+                    <li><a class="footer-list-element" href="#about">Support</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <img class="footer-logo" src="img/logoPushAppWhite.svg" alt="">
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-xs-12"></div>
+        </div>
+    </nav>
+    <span>Push App &copy; 2019</span>
+    <script src="/js/fetch.js"></script>
+</footer>

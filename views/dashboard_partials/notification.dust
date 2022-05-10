@@ -1,0 +1,11 @@
+<div class="card grey darken-3" tabindex="0">
+    <div class="card-content"><span class="card-title white-text">{notification.userName} gave Feedback on exercise: {notification.exerciseName}</span>
+        <p class="white-text">I did {notification.repetitions} repetitions and {notification.sets} sets with {notification.weight} kg. {notification.comments}</p>
+    </div>
+    <div class="card-action" style="padding-bottom: 3rem;">
+        <input id="notified-clientId" type="hidden" value="{notification.from}">
+        <input id="notified-coachId" type="hidden" value="{notification.for}">
+        <input style="margin-bottom: 1.5rem;" id="notification-message" type="text" placeholder="Message..." class="validate" style="border-color: white;">
+        <a onclick="sendMessage()" class="btn waves-effect waves-light black white-text right">Submit<i class="material-icons right">send</i></a>
+    </div>
+</div>

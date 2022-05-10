@@ -1,0 +1,27 @@
+<table class="highlight centered" style="position: relative;">
+    <thead>
+        <tr>
+            <th data-field="exercise">Exercise</th>
+            <th data-field="bodyPart">Body Part</th>
+            <th data-field="repetitions">Repetitions</th>
+            <th data-field="sets">Nr. of Sets</th>
+            <th data-field="weight">Weight</th>
+            <th data-field="comments">Comments</th>
+            {?coach}
+                <th data-field="#">
+                <a class="valign-wrapper btn-floating btn-small waves-effect waves-light black" onclick="deleteFromDatabase()">
+                                 <i class="material-icons">delete_forever</i>
+                </a>
+                </th>
+            {/coach}
+        </tr>
+    </thead>
+    <tbody id="scheduleTable">
+        {?coach}
+        {>"dashboard_partials/schedule_table_input_row"/}
+        {/coach}
+    </tbody>
+</table>
+<script src="/js/resources/dustjs-linkedin/dust-core.min.js"></script>
+<script src="/js/views.js"></script>
+<script src="/js/schedule.js"></script>

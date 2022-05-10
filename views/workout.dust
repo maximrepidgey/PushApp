@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="">
+    <title>Workout</title>
+    <!-- Materialize-->
+    <link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/admin-materialize.min.css?0" rel="stylesheet">
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/workout.css">
+
+</head>
+
+<body class="">
+    <div class="container center-content">
+        <div class="row">
+            <div class="col l2 m3 s3">
+                <a id="pause-continue" onclick="chronoPauseOrContinue()" class="btn-huge left"><i class="material-icons">pause</i></a>
+            </div>
+            <div class="col l8 m6 s6">
+                <h1 onload="chronoStart()" id="chronometer" class="white-text">00:00:00</h1>
+            </div>
+            <div class="col l2 m3 s3">
+                <a onclick="stopWorkout()" class="btn-huge right"><i class="material-icons">stop</i></a>
+            </div>
+        </div>
+        {>"workout-exercise"/}
+
+    </div>
+
+
+    <script src="/js/chronometer.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+
+    <!-- External libraries -->
+
+    <!-- jqvmap -->
+    <script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/jquery.vmap.min.js?0"></script>
+    <script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/jquery.vmap.world.js?0"
+        charset="utf-8"></script>
+    <script type="text/javascript"
+        src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/jquery.vmap.sampledata.js?0"></script>
+
+    <!-- ChartJS -->
+    <script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/Chart.js?0"></script>
+    <script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/Chart.Financial.js?0"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.7.0/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
+    <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/imagesloaded.pkgd.min.js?0"></script>
+    <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/masonry.pkgd.min.js?0"></script>
+
+
+    <!-- Initialization script -->
+    <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/dashboard.min.js?0"></script>
+
+    <div class="jqvmap-label" style="display: none;"></div>
+    <div class="sidenav-overlay" style="display: none; opacity: 0;"></div>
+    <div class="drag-target"></div>
+    <div id="chartjs-tooltip" class="bottom" style="opacity: 0; left: 724px; top: 429px; padding: 12px;">
+        <table>
+            <thead>
+                <tr>
+                    <th>two</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Number: 6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <script src="/js/chronometer.js"></script>
+        <script src="/js/fetch.js"></script>
+        <script src="/js/resources/dustjs-linkedin/dust-core.min.js"></script>
+        <script src="/js/session.js"></script>
+        <script src="/js/schedule.js"></script>
+        <script src="/js/views.js"></script>
+        <script src="/js/helper.js"></script>
+        <script src="/js/workout.js"></script>
+
+</body>
+
+</html>

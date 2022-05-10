@@ -1,0 +1,43 @@
+<div class="row">
+    <form class="col s12" id="feedback-form">
+        <input type="hidden" value={exercise._id}>
+        <div class="row">
+            <div class="input-field col s4">
+                <input id="repetitions" type="number" class="validate">
+                <label for="repetitions">Repetitions</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Write the number of repetitions</span>
+            </div>
+
+            <div class="input-field col s4">
+                <input id="sets" type="number" class="validate">
+                <label for="sets">Sets</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Write the number of sets</span>
+            </div>
+
+            <div class="input-field col s4">
+                <input id="weight" type="number" class="validate">
+                <label for="weight">Weight</label>
+                <span class="helper-text" data-error="wrong" data-success="right">How much weight did you lift?</span>
+            </div>
+
+            <div class="col s12">
+                <h3 class="center">Send Feedback to Coach</h3>
+            </div>
+
+            <div class="input-field col s12">
+                <input id="comments" type="text" class="validate">
+                <label for="comments">Comments</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Your coach will reply as soon as possible</span>
+            </div>
+
+
+            <div class="input-field col s12">
+                {^finish}
+                <input onclick="submitFeedback(event)" class="btn-large black white-text"  id="submit-btn" type="submit" class="validate" value="Submit">
+                {:else}
+                <input onclick="submitFeedback(event)" class="btn-large black white-text"  id="submit-btn" type="submit" class="validate" value="Submit and Finish">
+                {/finish}
+            </div>
+        </div>
+    </form>
+</div>

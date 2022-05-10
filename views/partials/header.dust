@@ -1,0 +1,14 @@
+    <header class="hero-header-banner-section">
+        {>"partials/nav"/}
+
+        <h1 class="header-text--h1 col-sm-12">
+            Push Your Limits
+        </h1>
+        <span class="learn-more-text col-sm-12">
+            Create workouts, hire a coach <br> and track your progress in a single app
+        </span>
+        <span class="learn-more-btn col-sm-12">
+            <a class="btn-gradient" href="/register">Enroll</a>
+            <!-- <a href="#about">Learn More &#8605;</a> -->
+        </span>
+    </header>

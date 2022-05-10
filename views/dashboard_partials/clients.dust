@@ -1,0 +1,11 @@
+<!-- <div class="input-field col s6" id="name"> -->
+<div class="input-field col s6" id="searchBox">
+            <input id="last_name" type="text" class="validate" onkeyup="searchClients()">
+            <label for="last_name">Search...</label>
+   </div>
+</div>
+<div class="col l12 s12">
+        <div class="row" id="grid">
+
+        </div>
+

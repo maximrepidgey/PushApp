@@ -1,0 +1,22 @@
+<div class="col s12 m4">
+    <div class="card">
+        <div class="card-image">
+            <img src="{coach.photo}">
+
+        </div>
+
+        <div class="card-content">
+             <span name="{coach._id}"class="card-title">{coach.firstName} {coach.lastName} </span>
+            {?noRating}
+                <span>No rating yet for {coach.firstName}</span>
+            {/noRating}
+            {#stars}
+                <span class="{.}"></span>
+            {/stars}
+             <p>{coach.description}</p>
+        </div>
+        <div class="card-action"style="background-color: black;">
+            <a name="{coach._id}" class="white-text" onclick="showServices(event);" href="#">Show Services</a>
+        </div>
+    </div>
+</div>

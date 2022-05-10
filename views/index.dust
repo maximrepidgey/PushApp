@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{title} | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/index_style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+
+<body>
+    {>"partials/header"/}
+
+    <section class="container mb-5">
+        <div class="row">
+            <div class=" col-lg-6 col-xs-12">
+                <h1 id="about" class="heading--gradient">About PushApp</h1>
+                <div class="row">
+
+                    <p class="col-lg-12 col-xs-12 paragraph-text mb-3">
+                        PushApp is a free fitness application, designed to connect the world of coaches and athletes in an instant and intuitive way.
+                        By registering as a coach, it is possible to provide paid fitness services, to which users can register, maintaining direct
+                        contact with the coach, who will follow the user throughout the subscription period.
+                        The user can keep track of his own improvements on his profile, and, if he wants, even give feedback to the coaches.
+                    </p>
+
+                    <a class="btn btn--gradient" href="/register">Sign up now!</a>
+                    <!-- <a class="col-xs-12 col-lg-12 mb-center btn btn--gradient mt-1" href="/register">Enroll</a> -->
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-xs-12">
+                <img class="thumbnail-square" src="/img/img-modal-1.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="clip-top-bottom section-background--grey mt-4 mb-5">
+        <h1 class="heading--gradient text-center">Features</h1>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="card col-lg-4 col-xs-12">
+                    <img src="/img/icons/man-dumbell.svg" alt="man with dumbell icon">
+                    <h2>Create routines</h2>
+                    <p>
+                        The coaches will create customized programs adapted to your current physical form, which will allow you to achieve the desired result.
+                    </p>
+                </div>
+                <div class="card col-lg-4 col-xs-12">
+                    <img src="/img/icons/coach.svg" alt="man with dumbell icon">
+                    <h2>Hire coaches</h2>
+                    <p>
+                        By hiring a coach you will have an expert figure at your side, able to advise you on the best tactics to achieve your goals.
+                    </p>
+                </div>
+                <div class="card col-lg-4 col-xs-12">
+                    <img src="/img/icons/support.svg" alt="man with dumbell icon">
+                    <h2>Real-Time Support</h2>
+                    <p>
+                        Through a chat and real-time feedback on the exercises, the coaches will follow you always and everywhere during your journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section class="section-trainers">
+        <h1><span class="span-main">Our Best </span><span class="span-secondary">Trainers</span></h1>
+        <div class="container mt-4 mb-5">
+            <div class="row">
+                <div class=" card-image-bg col-lg-4 col-xs-12">
+                    <img src="/img/trainers/trainer-img-1.png" alt="">
+                    <h2>Sarah Connor</h2>
+                    <p>LLorem ipsum dolor sit amet consectetur adipisicing elit. Odio tempora temporibus praesentium
+                        mollitia
+                    </p>
+                    <div class="social-networks">
+                        <a href="#"><img src="/img/social-networks/instagram-logo.svg" alt=""></a>
+                        <a href="#"><img src="/img/social-networks/facebook-logo.svg" alt=""></a>
+                        <a href="#"><img src="/img/social-networks/twitter-logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="card-image-bg col-lg-4 col-xs-12">
+                    <img src="/img/trainers/trainer-img-2.png" alt="">
+                    <h2>Romeo Santos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio tempora temporibus praesentium
+                        mollitia
+                    </p>
+                    <div class="social-networks">
+                        <a href="#"><img src="/img/social-networks/instagram-logo.svg" alt=""></a>
+                        <a href="#"><img src="/img/social-networks/facebook-logo.svg" alt=""></a>
+                        <a href="#"><img src="/img/social-networks/twitter-logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="card-image-bg col-lg-4 col-xs-12">
+                    <img src="/img/trainers/trainer-img-3.png" alt="">
+                    <h2>Becky G</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio tempora temporibus praesentium
+                        mollitia
+                    </p>
+                    <div class="social-networks">
+                        <a href="#"><img src="/img/social-networks/instagram-logo.svg" alt=""></a>
+                        <a href="#"><img src="/img/social-networks/facebook-logo.svg" alt=""></a>
+                        <a href="#"><img src="/img/social-networks/twitter-logo.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+{>"partials/footer"/}
+</body>
+
+</html>

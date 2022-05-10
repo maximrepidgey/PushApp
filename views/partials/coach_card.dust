@@ -1,0 +1,13 @@
+<div class="card-image-bg col-lg-4 col-xs-12">
+    <img src="/img/trainers/trainer-img-3.png" alt="">
+    <h2><a href="">HIRE {coach.firstName} {coach.lastName}</a></h2>
+    <p>
+        {coach.description}
+    </p>
+
+    <div class="social-networks">
+        <a href="#"><img src="/img/social-networks/instagram-logo.svg" alt=""></a>
+        <a href="#"><img src="/img/social-networks/facebook-logo.svg" alt=""></a>
+        <a href="#"><img src="/img/social-networks/twitter-logo.svg" alt=""></a>
+    </div>
+</div>

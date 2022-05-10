@@ -1,0 +1,21 @@
+<div class="col m6 s12" style="position: absolute; left: 493px; top: 969px;">
+    <div id="tab-legend-chart-card" class="card black">
+        <div class="card-content">
+            <span class="flow-text card-title white-text">Progress</span>
+            <div class="chartjs-size-monitor"
+                style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                <div class="chartjs-size-monitor-expand"
+                    style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                    <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+                    </div>
+                </div>
+                <div class="chartjs-size-monitor-shrink"
+                    style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                    <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                </div>
+            </div>
+            <canvas class="card-chart chartjs-render-monitor" id="tab-legend-line-chart" width="850" height="850"
+                style="display: block; height: 425px; width: 425px;"></canvas>
+        </div>
+    </div>
+</div>

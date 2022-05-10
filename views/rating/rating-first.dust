@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="">
+    <link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/admin-materialize.min.css?0" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/rating.css">
+    <link rel="stylesheet" href="/css/image.css">
+    <title>Rating the coach</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+        .checked:hover {
+            color: darkgray;
+        }
+        .unchecked:hover {
+            color: sandybrown;
+        }
+    </style>
+</head>
+<body>
+<div class="container"  style="background-color: #606060; border: 2px solid black;">
+
+
+<h2 class="center white-text">Rate the coach {name}</h2>{!name of coach!}
+    <p id="alert"></p>
+    <div class="row" style="padding-bottom: 0">
+        <div class="input-field col s12">
+                <span id="firstStar" onclick="starsRating(event)" class="fa fa-star checked"></span>
+                <span onclick="starsRating(event)" class="unchecked fa fa-star"></span>
+                <span onclick="starsRating(event)" class="unchecked fa fa-star"></span>
+                <span onclick="starsRating(event)" class="unchecked fa fa-star"></span>
+                <span onclick="starsRating(event)" class="unchecked fa fa-star"></span>
+        </div>
+    </div>
+
+    <div class="row" style="padding-top: 0">
+        <div class="input-field col s12">
+            <label style="color: black">Title of review:
+                <input required id="titleReview" type="text" name="title" placeholder="Title">
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <label style="color: black">Add comment:
+                <textarea minlength="2" required id="commentReview" rows="5" cols="58" placeholder="Add your comment..."></textarea>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <p id="alert"></p>
+        <div id="buttons" class="input-field col s12">
+            <input onclick="addReview(event, '{id}')" type="button" value="Rate">
+        </div>
+    </div>
+</div>
+</body>
+<script src="/js/helper.js"></script>
+
+</html>

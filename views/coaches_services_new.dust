@@ -1,0 +1,29 @@
+<div class="row" id="divtitle">
+    <div class="col s12 m4">
+        <div class="card">
+                <div class="card-content" style="background: white;">
+                <label>Name:
+                    <input name="name" placeholder="Name">
+                    </label>
+                    <label>Duration (Months):
+                    <input name="duration" placeholder="Duration">
+                    </label>
+                    <label>Fee (CHF):
+                    <input name="fee" placeholder="Fee">
+                    </label>
+                    <label>Description:
+                    <input name="description" placeholder="Description">
+                    </label>
+                </div>
+                <div class="card-action" style="background-color:black;">
+                    <a style="cursor:pointer; color:white;" onclick="newService()">New Service</a>
+                </div>
+        </div>
+    </div>
+</div>
+
+<style>
+input{
+    color:black;
+}
+</style>

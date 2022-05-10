@@ -1,0 +1,18 @@
+<div class="col s12 m4">
+    <div class="card">
+
+        <div class="card-content">
+            <h5>{service.name}</h5>
+            <p><strong>Duration:</strong> {service.duration} month(s)</p>
+            <p><strong>Fee: {service.fee}</strong></p><hr>
+            <p>{service.description}</p>
+        </div>
+        <div class="card-action" style="background-color: black">
+        {?text}
+             <a href="#" style="color:white" name="{service._id}" onclick="gotoCheckout(event)">{text}</a>
+             {:else}
+             <a style="color:white" href="#">Edit service</a>
+             {/text}
+        </div>
+    </div>
+</div>

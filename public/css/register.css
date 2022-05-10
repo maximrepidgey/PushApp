@@ -1,0 +1,118 @@
+.choose-body{
+    background-image: url('../img/settings-background.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register-form img{
+    width: 10rem;
+    height: auto;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#im {
+    border-radius: 50%;
+}
+
+#reg input{
+    border: none;
+    background-color: transparent;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.register-form input{
+    border: none;
+    background-color: transparent;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.choose-card{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    padding: 6rem;
+    background-color: rgba(22, 191, 253, .9);
+    border-radius: 40px;
+    -webkit-box-shadow: 8px 6px 13px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 6px 13px -7px rgba(0,0,0,0.75);
+    box-shadow: 8px 6px 13px -7px rgba(0,0,0,0.75);
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.choose-card:hover{
+    transform: translateY(-3rem);
+    background-color:  rgba(21, 165, 218, 0.9);;
+
+}
+
+.register-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: 10%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 875px) {
+    .register-form{
+        flex-direction: column;
+    }
+
+    .choose-card{
+        margin-top: 5rem;
+    }
+
+    .choose-card:hover{
+        transform: translateY(0);
+    }
+}
+
+label{
+    color: white !important;
+}
+
+/* label focus color */
+ .input-field input:focus + label {
+   color: white !important;
+ }
+
+.input-field input {
+    color: white !important;
+}
+
+.input-field input + label {
+   color: white !important;
+ }
+ /* label underline focus color */
+ .row .input-field input {
+   border-bottom: 1px solid white !important;
+   box-shadow: 0 1px 0 0 white !important
+ }
+
+ .register-card{
+     margin-bottom: 3rem;
+     padding: 4rem; 
+     box-shadow: 4px 3px 14px 3px rgba(0,0,0,0.75);
+ }

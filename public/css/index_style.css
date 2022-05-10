@@ -1,0 +1,91 @@
+.text-center {
+  text-align: center;
+}
+
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image--circle {
+  border-radius: 50%;
+}
+
+
+.section-background--grey{
+  background-color: #e8e8e8;
+}
+
+.clip-top{
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  position: relative;
+  clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.clip-top h1{
+  text-transform: uppercase;
+  position: relative;
+  top: 40%;
+  margin-top: 5rem;
+}
+
+.clip-top-bottom{
+    padding-top: 10rem;
+  padding-bottom: 15rem;
+  position: relative;
+  clip-path: polygon(0 18%, 100% 0, 100% 83%, 0% 100%);
+}
+
+
+.section-trainers h1{
+  text-transform: uppercase;
+  text-align: center;
+  border-style: solid;
+  border-width: 1rem;
+  margin: 0 30%;
+  border-image: linear-gradient(to right,rgba(255, 255, 255, 0), #16bffd, #cb3066, #16bffd, rgba(255, 255, 255, 0)) 0 0 10% 0;
+}
+
+.section-trainers span{
+  font-size: 4rem;
+}
+
+.span-primary{
+  color: black;
+}
+
+.span-secondary{
+  color: #16bffd;
+}
+
+@media only screen and (max-width: 875px) {
+
+  .clip-top-bottom{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    clip-path: polygon(0 8%, 100% 0, 100% 93%, 0% 100%);
+  }
+
+
+  .section-trainers h1{
+    text-transform: uppercase;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.3rem;
+    margin: 0 30%;
+    border-image: linear-gradient(to right,rgba(255, 255, 255, 0), #16bffd, #cb3066, #16bffd, rgba(255, 255, 255, 0)) 0 0 10% 0;
+  }
+
+  .section-trainers span{
+    font-size: 3rem;
+  }
+  
+}

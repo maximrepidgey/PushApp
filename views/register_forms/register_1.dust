@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="">
+
+    <link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/admin-materialize.min.css?0" rel="stylesheet">
+    <!-- Material Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body class="choose-body">
+    <a class="btn-floating grey" style="margin: 3rem;" href="/"><i class="material-icons">arrow_back</i></a>
+    <div class="container" id="container-register">
+        <div class="row register-form" id="reg">
+            <div class="col l5 s12 choose-card" onclick="fetchCoach(event)" value="Coach" name="coach">
+                <img src="/img/icons/coach-icon.png" alt="">
+                <input class="choose-input" type="submit" onclick="fetchCoach(event)" value="Coach" name="coach">
+            </div>
+            <div class="col offset-l2 l5 s12 choose-card" onclick="fetchClient(event)" value="Client" name="client">
+                <img src="/img/icons/client-icon.png" alt="">
+                <input class="choose-input" type="submit" onclick="fetchClient(event)" value="Client" name="client">
+            </div>
+        </div>
+    </div>
+    <script src="/js/resources/dustjs-linkedin/dust-core.min.js"></script>
+    <script src="/js/views.js"></script>
+    <script src="/js/helper.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+    
+    
+    <!-- jqvmap -->
+    <script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/jquery.vmap.min.js?0"></script>
+    <script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/jquery.vmap.world.js?0"
+        charset="utf-8"></script>
+    <script type="text/javascript"
+        src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/jquery.vmap.sampledata.js?0"></script>
+    
+    <!-- ChartJS -->
+    <script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/Chart.js?0"></script>
+    <script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/Chart.Financial.js?0"></script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.7.0/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
+    <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/imagesloaded.pkgd.min.js?0"></script>
+    <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/masonry.pkgd.min.js?0"></script>
+    <!-- Initialization script -->
+    <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/dashboard.min.js?0"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+<div class="card grey darken-3" tabindex="0">
+    <div class="card-content"><span class="card-title white-text">Your coach sent you a message:</span>
+        <p class="white-text">{notification.comments}</p>
+    </div>
+</div>

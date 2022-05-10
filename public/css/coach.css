@@ -1,0 +1,76 @@
+.profile-pic {
+    margin-top: 0.5rem;
+    width: 3rem;
+}
+
+.nav {
+    flex: 0 0 17vw;
+    background-color: red;
+    float: left;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-left-style: none;
+}
+
+
+aside {
+    flex: 0 0 17vw;
+    background-color: darkgray;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-right-style: none;
+}
+
+#center {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+tbody {
+    display: block;
+    height: auto;
+    overflow: auto;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding: 3rem;
+}
+
+thead {
+    width: calc(100% - 1em)
+}
+
+table {
+    width: 100%;
+}
+
+
+.notification {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+
+#notification-message {
+    color: white;
+}
+
+#wrapper-stats {
+    display: block;
+    z-index: 0;
+}
+
+#wrapper-schedule {
+    display: block;
+    z-index: 1;
+}

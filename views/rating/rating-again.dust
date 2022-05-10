@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="">
+    <link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/admin-materialize.min.css?0" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/rating.css">
+    <link rel="stylesheet" href="/css/image.css">
+    <title>Rating the coach</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+        /*.checked:hover {
+            color: darkgray;
+        }*/
+        .unchecked:hover {
+            color: sandybrown;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="background-color: #606060; border: 2px solid black;">
+<h2 class="center"> Do you want to change the rating for {name}?</h2>
+    <div class="row" style="padding-bottom: 0">
+        <div class="input-field col s12">
+                <span id="firstStar" {@gte key=score value=1}class="fa fa-star checked"
+                      {:else}class="fa fa-star"{/gte}></span>
+                <span {@gte key=score value=2}class="fa fa-star checked"
+                            {:else}class="fa fa-star"{/gte}></span>
+                <span {@gte key=score value=3}class="fa fa-star checked"
+                            {:else}class="fa fa-star"{/gte}></span>
+                <span {@gte key=score value=4}class="fa fa-star checked"
+                            {:else}class="fa fa-star"{/gte}></span>
+                <span {@gte key=score value=5}class="fa fa-star checked"
+                            {:else}class="fa fa-star"{/gte}></span>
+        </div>
+    </div>
+    <div class="row" style="padding-top: 0">
+        <div class="input-field col s12">
+            <label style="color: black">Title of review:
+                <input required disabled id="titleReview" value="{title}" type="text" name="title" placeholder="Title">
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <label style="color: black">Add comment:
+                <textarea minlength="2" required disabled id="commentReview" rows="5" cols="58" placeholder="Add your comment...">{comment}</textarea>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <p id="alert"></p>
+        <div id="buttons" class="input-field col s12">
+            <input style="margin-right: 10px" class="waves-effect white waves-light btn-large" onclick="changeReview(event, '{objId}')" type="button" value="Yes">
+            <input class="waves-effect white waves-light btn-large" onclick="noReviewChange()" type="button" value="No">
+        </div>
+    </div>
+</div>
+</body>
+<script src="/js/helper.js"></script>
+</html>

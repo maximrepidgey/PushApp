@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+{>"dashboard_partials/head" title="Login" css="/css/login.css"/}
+<body>
+    <h1 class="center white-text">LOGIN</h1>
+    <div class="row">
+        <div class="col s6">
+            <a href="/" class="btn waves-effect waves-light pink darken-2 col s12"><i class="material-icons prefix">arrow_back</i></a>
+        </div>
+        <div class="col s6">
+            <a href="/register" class="btn waves-effect waves-light pink darken-2 col s12">Register Now!</a>
+        </div>
+    </div>
+    <div id="login-page" class="row">
+        <div class="col s12 z-depth-6 card-panel">
+            <form class="login-form" action="/login" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="row">
+                    {message}
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input placeholder="User Name" class="validate" name="username" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock_outline</i>
+                        <input placeholder="Password" name="password" type="password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s8 offset-s2">
+                        <input type="submit" class="btn waves-effect waves-light pink darken-2 col s12" value="Login" >
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/js/resources/dustjs-linkedin/dust-core.min.js"></script>
+<script src="/js/views.js"></script>
+<script src="/js/helper.js"></script>
+</html>

@@ -1,0 +1,28 @@
+<ul id="sidenav-left" class="sidenav sidenav-fixed black style=" transform: translateX(-105%);">
+    <li class="show-image"><div class="profile-cut-image"><img class="profile-{user.form}-image" src="{user.photo}" alt=""></div><a class="logo-container white-text">{user.firstName}</a></li>
+    <li class="no-padding">
+        <ul>
+            {#nItems}{!put links inside the array, or use AJAX!}
+                <li><a class="waves-effect white-text">{name}<i class="material-icons white-text">{icon}</i></a></li>
+             {/nItems}
+        </ul>
+        <ul class="collapsible collapsible-accordion">
+            {#nAccordions}
+                        <li class="bold waves-effect"><a class="collapsible-header white-text" tabindex="0">{title}
+                                <i class="material-icons chevron white-text">{icon}</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    {#subItems}
+                                        {?logout}
+                                        <li><a href="/logout" class="waves-effect white-text">{name}<i class="material-icons white-text">{icon}</i></a></li>
+                                        {:else}
+                                        <li><a href="/{accountType}/edit" class="waves-effect white-text">{name}<i class="material-icons white-text">{icon}</i></a></li>
+                                        {/logout}
+                                    {/subItems}
+                                </ul>
+                            </div>
+                        </li>
+            {/nAccordions}
+        </ul>
+    </li>
+</ul>

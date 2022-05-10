@@ -1,0 +1,66 @@
+<div class="masonry row wrapper-schedule">
+    <div class="col s12" id="divtitle">
+        <h2 id="title" class="center">Create New Schedule</h2>
+        {!<div class="input-field col s6" id="schedName">
+                    <input id="last_name" type="text" class="validate">
+
+                    <label for="last_name">Schedule Name</label>
+
+    <a class="valign-wrapper btn-floating btn-small waves-effect waves-light black" onclick="doneScheduleName(); createSchedule()">
+      <i class="material-icons" id="done_outline" >done_outline</i>
+      </a>
+
+        </div>!}
+
+    </div>
+
+    <div class="col s12">
+        <div class="input-field col s12 m6">
+
+            <select class="icons" id="pickUser" onchange="renderTable()">
+                <option value="" disabled selected>Choose your option</option>
+                {#clients}
+                <option data-icon="{photo}" value="{_userAccountId}" class="left">{firstName} {lastName}</option>
+                {/clients}
+            </select>
+            <label>Client</label>
+        </div>
+        <div class="input-field col m6 s12" >
+            <select id="day_btn" onchange="renderTable()">
+                <option value="" disabled selected>Session</option>
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+                <option value="7">Sunday</option>
+            </select>
+            <label>Day</label>
+        </div>
+
+        <div class="input-field col m6 s12">
+
+           {!<a class="btn-floating btn-small waves-effect waves-light black" onclick="takeRows(event)">
+                <i id="done_btn" class="material-icons" >done_outline</i></a>
+
+            <a class="valign-wrapper btn-floating btn-small waves-effect waves-light black" onclick="deleteFromDatabase()">
+                 <i class="material-icons">delete_forever</i>
+            </a>!}
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col l12 m12 s12 card">
+
+        {>"dashboard_partials/schedule_table"/}
+
+    </div>
+</div>
+<div class="row center">
+    <a class="btn-floating btn-large waves-effect waves-light black" onclick="addRow(); newExercise();">
+        <i class="material-icons">add</i>
+    </a>
+</div>
+<script src="/js/schedule.js"></script>

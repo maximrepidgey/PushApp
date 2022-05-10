@@ -1,0 +1,18 @@
+{#exercises}
+    <tr>
+        <td data-field="exercise-name">{name}</td>
+        <td data-field="exercise-name">{bodyPart}</td>
+        <td data-field="exercise-repetitions">{repetitions}</td>
+        <td data-field="exercise-sets">{set}</td>
+        <td data-field="exercise-weight">{pumpWeight}</td>
+        <td data-field="Comments">{comment}</td>
+    </tr>
+  {:else}
+    <tr>
+      <td data-field="exercise-name">-</td>
+      <td data-field="exercise-repetitions">-</td>
+      <td data-field="exercise-sets">-</td>
+      <td data-field="exercise-weight">-</td>
+      <td data-field="Comments">-</td>
+    </tr>
+{/exercises}

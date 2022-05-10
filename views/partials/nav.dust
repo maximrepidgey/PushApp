@@ -1,0 +1,50 @@
+<nav role="navigation">
+    <div id="menuToggle">
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <a href="/">
+                <li>Home</li>
+            </a>
+            <a href="/our-coaches">
+                <li>Our Coaches</li>
+            </a>
+            <a href="/#about">
+                <li>About us</li>
+            </a>
+            {@eq key=log value="Y"}
+                <a href="/logout">
+                    <li>Logout</li>
+                </a>
+            {:else}
+                <a href="/login">
+                    <li>Login</li>
+                </a>
+                <a href="/register" target="_blank">
+                    <li>Sign up now!</li>
+                </a>
+            {/eq}
+
+        </ul>
+    </div>
+</nav>
+<nav class="nav">
+    <img src="img/logoPushAppWhite.svg" alt="">
+    <ul>
+        <li><a class="list-element" href="/">Home</a></li>
+        <li><a class="list-element" href="/our-coaches">Our Coaches</a></li>
+        <li><a class="list-element" href="/#about">About us</a></li>
+
+        {@eq key=log value="Y"}
+            <li><a class="list-element" href="/logout">Logout</a></li>
+        {:else}
+            <li><a class="list-element" href="/login">Login</a></li>
+            <li><a class="btn btn--gradient" href="/register">Sign up now!</a></li>
+        {/eq}
+
+
+    </ul>
+</nav>

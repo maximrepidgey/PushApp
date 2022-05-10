@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/admin-materialize.min.css?0" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>Rating the coach</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body class="has-fixed-sidenav" data-gr-c-s-loaded="true" onload="getCoaches()">
+
+    {>"dashboard_partials/header" name="John Doe" /}
+    <main>
+        <div class="row container">
+            {>"dashboard_partials/coaches"/}
+        </div>
+    </main>
+    {>"dashboard_partials/footer"/}
+</body>
+
+<script src="/js/resources/dustjs-linkedin/dust-core.min.js"></script>
+<script src="/js/views.js"></script>
+<script src="/js/fetch.js"></script>
+<script src="/js/session.js"></script>
+<script src="/js/service.js"></script>
+<script src="/js/helper.js"></script>
+
+</html>

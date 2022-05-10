@@ -1,0 +1,141 @@
+<div class="col s12 l6">
+    <div class="row">
+        <div class="input-field col s6">
+            <input class="input-field" class="input-field" required pattern="[a-zA-Z][a-z]+$" type="text" value="{firstName}"
+                name="firstName" />
+            <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+            <input class="black-text" class="input-field" required pattern="\D+" type="text" value="{lastName}" name="lastName" />
+            <label for="last_name">Last Name</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 input-field">
+            {?description}
+                <input class="input-field" type="text" value="{description}" name="description" />
+            {:else}
+                <input class="input-field" type="text" name="description" />
+            {/description}
+            <label for="description">Description</label>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <label>Choose yor photo</label>
+        <div class="file-field input-field">
+            <div class="btn black">
+                <span>Browse</span>
+                    <input onchange="getImage()" id="image" accept="image/*" type="file" />
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Upload file" />
+            </div>
+        </div>
+    </div>
+    <input id="putimage" type="hidden" name="photo">
+    <img src="" id="im" style="max-width: 7.5rem; height:auto;">
+
+    <div class="row">
+        <div class="input-field col s12">
+            <input required value="{birthday}" placeholder="2019-12-31" min="1900-01-01" max="{maxDate}" type="date" name="birthday" />
+            <label for="first_name">Birthday</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <label>Sex</label>
+
+            <select class="browser-default black white-text" name="sex" required>
+                <option value disabled selected>-- Select an option --</option>
+                <option value="female">female</option>
+                <option value="male">male</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <label>Unit System</label>
+
+            <select class="browser-default black white-text" name="unitSystem">
+                <option value disabled selected>-- Select an option --</option>
+                    <option value="metric">metric</option>
+                    <option value="imperial">imperial</option>
+                    <option value="other">other</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input required value="{phone}" type="text" name="phone" />
+            <label for="icon_telephone">Phone</label>
+        </div>
+    </div>
+</div>
+<div class="col s12 l6">
+    <div class="row">
+        <div class="input-field col s12">
+            <input required value="{address1}" type="text" name="address1" />
+            <label for="first_name">Address 1</label>
+        </div>
+        <div class="input-field col s12">
+            <input type="text" value="{address2}" name="address2" />
+            <label for="last_name">Address 2</label>
+        </div>
+
+        <div class="input-field col s6">
+            <input required value="{city}" type="text" name="city" />
+            <label for="first_name">City</label>
+        </div>
+        <div class="input-field col s6">
+            <input required value="{state}" type="text" name="state" />
+            <label for="last_name">State</label>
+        </div>
+
+        <div class="input-field col s6">
+            <input required value="{country}" type="text" name="country" />
+            <label for="first_name">Country</label>
+        </div>
+        <div class="input-field col s6">
+            <input required value="{zipCode}" type="text" name="zipCode" />
+            <label for="last_name">Zip Code</label>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col s12">
+            <label>Currency</label>
+            <select class="browser-default black white-text" required id="currency" name="currency">
+                <option value="CHF">CHF</option>
+                <option value="Euro">€</option>
+                <option value="USD">$</option>
+                <option value="AUS">AU$</option>
+                <option value="CAN">$CAN</option>
+                <option value="Yen">¥</option>
+                <option value="GBP">£</option>
+                <option value="SWE">kr</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <label for="localization">Localization</label>
+            <input type="text" onload="getLocation()" name="localization" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <input required value="{email}" type="email" name="email" />
+            <label for="email">Email</label>
+        </div>
+    </div>
+    <input type="hidden" value="{credentials}" name="credentials">
+</div>

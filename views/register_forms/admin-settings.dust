@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/admin-materialize.min.css?0" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link rel="stylesheet" href="/css/settings.css">
+ <link rel="stylesheet" href="/css/image.css">
+    <title>Admin settings</title>
+</head>
+<body>
+<div class="container">
+<a class="btn-floating grey" style="margin: 3rem;" onclick="redirectDashboard()"><i class="material-icons">arrow_back</i></a>
+    <h2 class="center white-text">Settings </h2>
+<form action="/admin/edit/{thisId}?_method=PUT" method="POST" enctype="application/x-www-form-urlencoded">
+    {>"../partials/settings"/}
+
+        <div class="row">
+            <div class="input-field col s12">
+        <input class="waves-effect white waves-light btn-large" type="submit" value="Change">
+
+            </div>
+        </div>
+</form>
+</div>
+<script src="/js/helper.js"></script>
+<script src="/js/resources/dustjs-linkedin/dust-core.min.js"></script>
+<script src="/js/views.js"></script>
+</body>
+
+</html>

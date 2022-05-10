@@ -1,0 +1,38 @@
+<tr>
+    <td>
+       <div class="input-fields">
+            <input placeholder="Exercise" id="exercise" type="text" class="validate" list="select" onkeyup="getExercises()" onchange="autoComplete()"/>
+            <datalist id="select">
+                <!-- schedule.js inserts here the options --!>
+            </datalist>
+        </div>
+    </td>
+    <td>
+            <div class="input-field">
+                <input placeholder="Body Part" id="bodyPart" type="text" class="validate">
+            </div>
+    </td>
+    <td>
+        <div class="input-field">
+            <input placeholder="Repetitions" id="repetitions" type="number" class="validate">
+        </div>
+    </td>
+    <td>
+        <div class="input-field">
+            <input placeholder="Sets" id="sets" type="number" class="validate">
+        </div>
+    </td>
+    <td>
+        <div class="input-field">
+            <input placeholder="Weight" id="weight" type="number" class="validate">
+        </div>
+    </td>
+    <td>
+        <div class="input-field">
+            <input placeholder="Comments" id="comment" type="text" class="validate">
+        </div>
+    </td>
+</tr>
+<script src="/js/resources/dustjs-linkedin/dust-core.min.js"></script>
+<script src="/js/views.js"></script>
+<script src="/js/schedule.js"></script>

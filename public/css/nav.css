@@ -1,0 +1,158 @@
+.nav{
+    z-index: 1;
+}
+
+.nav > ul {
+    list-style: none;
+    float: right;
+    margin-right: 5%;
+    margin-top: 4rem;
+}
+#menuToggle{
+    display: none;
+}
+
+.nav > img{
+    width: 25rem;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+
+.nav > ul > li, .nav a{
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+
+.list-element{
+    font-weight: 400;
+    margin: 0 0.9rem;
+    font-size: 1.7rem;
+    transition: all .1s ease-in;
+    padding: 1rem;
+}
+
+ul .btn{
+    margin-left: 4rem;
+}
+
+.list-element:hover{
+    color : #CB3066;
+}
+
+@media only screen and (max-width: 875px) {
+    .nav {
+        display: none;
+    }
+
+    #menuToggle{
+        display: block;
+        position: relative;
+        margin-left: 2rem;
+        z-index: 1;
+        
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle input{
+        display: block;
+        width: 4rem;
+        height: 3.2rem;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        
+        cursor: pointer;
+        
+        opacity: 0; /* hide this */
+        z-index: 5; /* and place it over the hamburger */
+        
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+
+    /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+
+
+    #menu{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        margin: -12rem 0 0 -50%;
+        padding: 80vw;
+        padding-top: 10rem;
+        background: white;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;  
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        overflow: hidden;
+    }
+
+    #menu li
+    {
+        padding: .9rem 0;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: 600;
+        color: #CB3066;
+    }
+
+    #menu li a{
+        text-decoration: none;
+    }
+
+    #menuToggle input:checked ~ ul
+    {
+    transform: none;
+    }
+}

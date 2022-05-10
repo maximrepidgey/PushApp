@@ -1,0 +1,68 @@
+html,
+body {
+    height: 100%;
+}
+select{
+    display: inline;
+}
+.container{
+    position: sticky;
+    background: black;
+    width: 600px;
+    height:auto;
+}
+
+body {
+    background-image: url('../img/settings-background.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container input { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+}
+
+.row{
+    padding:30px;
+}
+
+#titleReview:disabled, #commentReview:disabled{
+    color: darkgray;
+}
+
+#commentReview:enabled {
+    color: white;
+}
+
+input[type="button"]{
+    color:black;
+    appearance: none;
+    left: 30%;
+    /*top: 70%;*/
+    /*margin-top: -15px;   !* = -height / 2   *!*/
+    /*margin-left: -100px; !* = -width / 2    *!*/
+    /*position: fixed;     !* Fixed is better *!*/
+}
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#im {
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#alert {
+    color: #550000;
+}

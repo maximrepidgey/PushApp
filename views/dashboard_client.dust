@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+{>"dashboard_partials/head" css="/css/client.css"/}
+
+<body class="has-fixed-sidenav" data-gr-c-s-loaded="true" onload="clientButtons()">
+    {>"dashboard_partials/header" field="clients" name="{user.firstName}" profile-picture="https://randomuser.me/api/portraits/men/61.jpg"/}
+
+    <main>
+        <div id="main-container" class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="text-flow">Dashboard</h2>
+                </div>
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="flow-text card-title">Today's Workout</span>
+                        </div>
+                        {>"dashboard_partials/schedule_table"/}
+                    </div>
+                    <div class="row center-align">
+                        <div class="col m6 s12">
+                            <a onclick="startWorkout()" id="beginWorkout-btn" class="btn-large black">Begin Workout</a>
+                        </div>
+                        <div class="col m6 s12">
+                            <a class="btn-large black disabled">Contact Coach</a>
+                        </div>
+                    </div>
+                </div>
+            
+
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <select class="icons" id="day-picker-progress" onchange="updateChart()">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                    <label>Choose a session to see your progress</label>
+                </div>
+                <canvas class="col s12" id="myChart"></canvas>
+            </div>
+        </div>
+    </main>
+    {>"dashboard_partials/footer"/}
+    <input type="hidden" value="{user.id}" id="user_id">
+    <script src="/js/buttons.js"></script>
+    <script src="/js/fetch.js"></script>
+    <script src="/js/resources/dustjs-linkedin/dust-core.min.js"></script>
+    <script src="/js/session.js"></script>
+    <script src="/js/schedule.js"></script>
+    <script src="/js/views.js"></script>
+    <script src="/js/helper.js"></script>
+    <script src="/js/workout.js"></script>
+    <script src="/js/chronometer.js"></script>
+    <script src="/js/service.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/checkout.js" defer></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+    var socket = io();
+    </script>
+    <script src="/js/notification-handler.js"></script>
+    <script src="/js/graphs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{title} | Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/index_style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/image.css">
+    <link rel="stylesheet" href="/css/client.css">
+</head>
+
+<body onload="getCoachesIndex()">
+    {>"partials/header_2"/}
+
+    <section class="section-trainers">
+        <h1><span class="span-main">All </span><span class="span-secondary">Trainers</span></h1>
+    </section>
+    <div class="container">
+        <div class="col l12 s12">
+             <div class="row" id="grid">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+    <script src="/js/resources/dustjs-linkedin/dust-core.min.js"></script>
+    <script src="/js/session.js"></script>
+    <script src="/js/schedule.js"></script>
+    <script src="/js/views.js"></script>
+    <script src="/js/helper.js"></script>
+</html>
